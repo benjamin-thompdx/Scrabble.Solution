@@ -15,6 +15,7 @@ namespace Scrabble.Test
       //Arrange
       Dictionary<char, int> newDictionary = new Dictionary<char, int>();
       //Act
+      newDictionary.Add ('a', 1);
       int points = newDictionary['a'];
       //Assert
       Assert.AreEqual(1, points);
