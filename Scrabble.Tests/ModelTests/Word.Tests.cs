@@ -29,6 +29,16 @@ namespace Scrabble.Test
       //Assert
       Assert.AreEqual(10, testResult);
     }
+    [TestMethod]
+    public void WordToChar_ConvertInputWordToCharArray_Char()
+    {
+      //Arrange
+      string userInput = "word";
+      //Act
+      char[] testArray = Word.WordToChar(userInput);
+      //Assert
+      Assert.AreEqual('r',testArray[2]);
+    }
   }
 
 }
