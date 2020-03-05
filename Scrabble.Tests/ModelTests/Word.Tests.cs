@@ -20,6 +20,15 @@ namespace Scrabble.Test
       //Assert
       Assert.AreEqual(1, points);
     }
+    [TestMethod]
+    public void Dictionary_CheckDictionaryContents_10()
+    {
+      //Arrange
+      //Act
+      int testResult = Word.scrabbleDictionary['z'];
+      //Assert
+      Assert.AreEqual(10, testResult);
+    }
   }
 
 }
