@@ -20,6 +20,7 @@ namespace Scrabble.Test
       //Assert
       Assert.AreEqual(1, points);
     }
+
     [TestMethod]
     public void Dictionary_CheckDictionaryContents_10()
     {
@@ -29,6 +30,7 @@ namespace Scrabble.Test
       //Assert
       Assert.AreEqual(10, testResult);
     }
+
     [TestMethod]
     public void WordToChar_ConvertInputWordToCharArray_Char()
     {
@@ -38,6 +40,19 @@ namespace Scrabble.Test
       char[] testArray = Word.WordToChar(userInput);
       //Assert
       Assert.AreEqual('r',testArray[2]);
+    }
+
+    [TestMethod]
+    public void CheckWordScore_CheckTheTotalWordScore_Int()
+    {
+      //Arrange
+      string userInput = "word";
+      //Act
+      char[] testArray = Word.WordToChar(userInput);
+      int totalScore = Word.CheckWordScore(testArray);
+      //Assert
+      Assert.AreEqual(8, totalScore);
+
     }
   }
 
