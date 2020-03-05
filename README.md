@@ -14,8 +14,8 @@ __
 | :-------------:|:-------------:|:-------------:|
 |Application assigns values to each letter|d, g|d = 2, g = 2|
 |User inputs a word|"dog"|5|
-|Application checks for none alphabetical inputs|"7"|No points returned|
 |Application checks to see if user input is a real word|"dg"|Sorry, this is not a recognized word|
+|If user input is a real word, return total word score|"word|Word Score: 8|
 
 ## Setup/Installation Requirements
 

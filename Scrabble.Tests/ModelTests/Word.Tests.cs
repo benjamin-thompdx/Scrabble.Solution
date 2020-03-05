@@ -52,7 +52,17 @@ namespace Scrabble.Test
       int totalScore = Word.CheckWordScore(testArray);
       //Assert
       Assert.AreEqual(8, totalScore);
+    }
 
+    [TestMethod]
+    public void IsAWord_CheckForRealWord_Bool()
+    {
+      //Arrange
+      string userInput = "word";
+      //Act
+      bool result = Word.IsAWord(userInput);
+      // Assert
+      Assert.AreEqual(true, result);
     }
   }
 
